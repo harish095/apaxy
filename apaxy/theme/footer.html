@@ -1,11 +1,11 @@
 	<div class="block">
-		You can add your own HTML above or below the directory listing. Simply explore the <code>header.html</code> and <code>footer.html</code> files.
+		Happy Coding!
 	</div><!--/.postlisting-->
 
 </div><!--/.wrapper-->
 
 <div class="footer">
-	Apaxy by <a href="https://twitter.com/adamwhitcroft">@adamwhitcroft</a>
+	Server maintained by Harish Kandala <a href="https://github.com/harish095">@harish095</a>
 </div><!--/.footer-->
 <script type="text/javascript">
 // grab the 2nd child and add the parent class. tr:nth-child(2)
@@ -17,7 +17,7 @@ if (uri.substring(uri.length-1) != '/'){
 	i = indexes.length;
 	while (i--){
 	    var a = indexes[i].getElementsByTagName('a')[0];
-	    a.href = '/' + uri + '/' + a.getAttribute('href',2);
+		a.href = uri ? '/' : '' + uri + '/' + a.getAttribute('href',2);
 	}
 }
 </script>
